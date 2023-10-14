@@ -1,0 +1,11 @@
+.wrap{
+    width: 1200px;
+    margin: 0;
+    padding: 0;
+}
+.main-menu-item{
+    background: radial-gradient(green,white,blue);
+    width: 1300px;
+    height: 1100px;
+
+}

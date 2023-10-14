@@ -1,0 +1,302 @@
+.wrap{
+    width: 1200px;
+    margin: 20px auto;
+}
+.row{
+    width: 100%;
+    display: block;
+}
+.col{
+    width: 30%;
+    display: block;
+    float:  left;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(80, 80, 80, 0.5);
+    margin: 20px;
+    transition: all 0.5s ease-in-out;
+}
+.col:hover{
+    transform: translateX(180px) scale(2,1.5);
+}
+.row .col:first-child .sana{
+    background-color: indianred;
+}
+.row .col:nth-child(14) .sana{
+    background-color: indianred;
+}
+.sana{
+    padding: 5rem 0;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    background-color: #7de29e;
+    color: white;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+.text-sana{
+    padding: 2rem 0;
+    text-align: center;
+}
+.col2{
+    width: 30%;
+    display: block;
+    float:  left;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(80, 80, 80, 0.5);
+    margin: 20px;
+    transition: all 1s ease-in-out ;
+}
+.col2:hover{
+    transform: rotate(180deg) translateZ(200px) ;
+}
+.col3{
+    width: 30%;
+    display: block;
+    float:  left;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(80, 80, 80, 0.5);
+    margin: 20px;
+    transition: all 1.5s ease-in-out ;
+}
+.col3:hover{
+    transform: skewY(100deg) translateX(180px) ;
+}
+.col4{
+    width: 30%;
+    display: block;
+    float:  left;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(80, 80, 80, 0.5);
+    margin: 20px;
+    transition: all 1s ease-in-out ;
+}
+.col4:hover{
+    transform: rotateX(360deg) ;
+}.col5{
+     width: 30%;
+     display: block;
+     float:  left;
+     border-radius: 8px;
+     background-color: white;
+     box-shadow: 0 0 10px rgba(80, 80, 80, 0.5);
+     margin: 20px;
+     transition: all 1s ease-in-out ;
+ }
+.col5:hover{
+    transform: rotateX(150deg) ;
+}
+.col6{
+    width: 30%;
+    display: block;
+    float:  left;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(80, 80, 80, 0.5);
+    margin: 20px;
+    transition: all 1s ease-in-out ;
+}
+.col6:hover{
+    transform: scaleX(1.5) ;
+}
+.col7{
+    width: 30%;
+    display: block;
+    float:  left;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(80, 80, 80, 0.5);
+    margin: 20px;
+    transition: all 1s ease-in-out ;
+}
+.col7:hover{
+    transform: scale(0.5,1.5) ;
+}
+.col8{
+    width: 30%;
+    display: block;
+    float:  left;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(80, 80, 80, 0.5);
+    margin: 20px;
+    transition: all 1s ease-in-out ;
+}
+.col8:hover{
+    transform: translateY(120px) ;
+}
+.col9{
+    width: 30%;
+    display: block;
+    float:  left;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(80, 80, 80, 0.5);
+    margin: 20px;
+    transition: all 1.5s ease-in-out ;
+}
+.col9:hover{
+    transform: translateX(80px) ;
+}
+.col10{
+    width: 30%;
+    display: block;
+    float:  left;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(80, 80, 80, 0.5);
+    margin: 20px;
+    transition: all 1s ease-in-out ;
+}
+.col10:hover{
+    transform: scale(0.5);
+}
+.col11{
+    width: 30%;
+    display: block;
+    float:  left;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(80, 80, 80, 0.5);
+    margin: 20px;
+    transition: all 1s ease-in-out ;
+}
+.col11:hover{
+    transform: scale(1.5) ;
+}
+
+.loader{
+    background: linear-gradient(20deg,#7579e2,#ff85a2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.loader-block{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    /*border: 4px solid rgba(255,255,255,0.5);*/
+    position: relative;
+    top: 37%;
+    left: 40%;
+}
+.loader-item{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border-top: 8px solid white;
+    border-left: 8px solid white;
+    border-right: 8px solid white;
+    border-bottom: 8px solid white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation-name: loader;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    /*animation-direction: alternate-reverse;*/
+
+}
+/*
+@keyframes loader {
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}*/
+/*@keyframes loader {
+    0%{
+        transform: rotateY(0) translate(0,0);
+        border-color: #7579e2;
+        border-radius: 30%;
+
+    }
+    25%{
+        transform: rotateY(180deg) translate(-200px,0);
+        border-color: #ffb82b;
+        border-radius: 10px;
+        background-image: url("rasmlar/baby.jpg");
+
+    }
+    50%{
+        transform: rotateY(360deg) translate(0,-200px);
+        border-color: white;
+        border-radius: 30%;
+        background-image: url("rasmlar/baby.jpg");
+    }
+    75%{
+        transform: rotateY(180deg) translate(200px,0);
+        border-color: #7579e2;
+        border-radius: 10px;
+    }
+    100%{
+        transform: rotateY(0) translate(0,0);
+        border-color: #7de29e;
+        border-radius: 10px;
+    }
+}*/
+.loader-item:nth-child(2){
+    width: 80%;
+    height: 80%;
+    left: 10%;
+    top: 10%;
+    animation-delay: 0.4s;
+}
+.loader-item:nth-child(3){
+    width: 60%;
+    height: 60%;
+    left: 20%;
+    top: 20%;
+    animation-delay: 0.8s;
+}
+.loader-item:nth-child(4){
+    width: 40%;
+    height: 40%;
+    left: 30%;
+    top: 30%;
+    animation-delay: 1.2s;
+}
+@keyframes loader {
+    0%{
+        transform: scale(2) translate(0,0) rotateX(0) skewX(5deg);
+        border-color: black;
+        box-shadow: 0 0 20px;
+        background-color: black;
+        background-image: url("rasmlar/baby.jpg");
+    }
+    25%{
+        transform: scale(1.8) translate(-600px,0) rotateX(180deg) skewY(20deg);
+        border-color: red;
+        box-shadow: 0 0 35px red;
+        background-color: red;
+        background-image: url("rasmlar/baby.jpg");
+    }
+    50%{
+        transform: scale(1.6) translate(0,0) rotateX(0) skew(100deg);
+        border-color: yellow;
+        box-shadow: 0 0 40px yellow;
+        background-image: url("rasmlar/baby1.jpg");
+    }
+    75%{
+        transform: scale(1.4) translate(600px,0) rotateX(180deg) scaleY(20);
+        border-color: #ffb82b;
+        background-color: #ffb82b;
+        background-image: url("rasmlar/baby1.jpg");
+    }
+    100%{
+        transform: scale(2) translate(0,0) rotateX(0) translateX(30px);
+        border-color: #7579e2;
+        box-shadow: 0 0 50px #7579e2;
+        background-color: #7579e2;
+        background-image: url("rasmlar/baby.jpg");
+    }
+}
